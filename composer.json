@@ -1,0 +1,19 @@
+{
+    "name": "itobuz/laravelgooglesheetintegration",
+    "description": "You can create google sheet by this packages.",
+    "authors": [
+        {
+            "name": "Itobuz",
+            "email": "info@itobuz.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "itobuz\\laravelgooglesheetintegration\\": "src/"
+        }
+    }
+
+}
