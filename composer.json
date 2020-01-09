@@ -8,12 +8,13 @@
         }
     ],
     "require": {
-        "google/apiclient": "dev-master"
+        "google/apiclient": "^2.0"
     },
     "autoload": {
         "psr-4": {
             "itobuz\\laravelgooglesheetintegration\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 
 }
