@@ -1,6 +1,6 @@
 <?php
 
-namespace itobuz\laravelgooglesheetintegration\models;
+namespace laravelstudio\laravelgooglesheetintegration\models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,6 +11,6 @@ class userGoogleSheet extends Model
 
   public function user()
   {
-      return $this->belongsTo('itobuz\laravelgooglesheetintegration\models\googleSheetUser','id');
+      return $this->belongsTo('laravelstudio\laravelgooglesheetintegration\models\googleSheetUser','id');
   }
 }

@@ -1,8 +1,8 @@
 <?php
-namespace itobuz\laravelgooglesheetintegration\repositories;
+namespace laravelstudio\laravelgooglesheetintegration\repositories;
 
-use itobuz\laravelgooglesheetintegration\contracts\UserInterface;
-use itobuz\laravelgooglesheetintegration\models\googleSheetUser as SystemUser;
+use laravelstudio\laravelgooglesheetintegration\contracts\UserInterface;
+use laravelstudio\laravelgooglesheetintegration\models\googleSheetUser as SystemUser;
 use Auth;
 
 class UserRepository implements UserInterface

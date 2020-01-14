@@ -1,5 +1,5 @@
 <?php
-namespace itobuz\laravelgooglesheetintegration\contracts;
+namespace laravelstudio\laravelgooglesheetintegration\contracts;
 
 interface userGoogleSheetInterface
 {

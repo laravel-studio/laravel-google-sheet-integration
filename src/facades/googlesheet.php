@@ -1,6 +1,6 @@
 <?php
 
-namespace itobuz\laravelgooglesheetintegration\facades;
+namespace laravelstudio\laravelgooglesheetintegration\facades;
 
 use Illuminate\Support\Facades\Facade;
 use App;

@@ -1,11 +1,11 @@
 <?php
 
-namespace itobuz\laravelgooglesheetintegration\middleware;
+namespace laravelstudio\laravelgooglesheetintegration\middleware;
 
 // use App\Http\Middleware;
-use itobuz\laravelgooglesheetintegration\contracts\UserInterface;
+use laravelstudio\laravelgooglesheetintegration\contracts\UserInterface;
 use Closure;
-use itobuz\laravelgooglesheetintegration\models\googleSheetUser as SystemUser;
+use laravelstudio\laravelgooglesheetintegration\models\googleSheetUser as SystemUser;
 
 class googleAuth
 {

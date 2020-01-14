@@ -1,7 +1,7 @@
 <?php
-namespace itobuz\laravelgooglesheetintegration\repositories;
+namespace laravelstudio\laravelgooglesheetintegration\repositories;
 
-use itobuz\laravelgooglesheetintegration\contracts\googleSheetInterface;
+use laravelstudio\laravelgooglesheetintegration\contracts\googleSheetInterface;
 use Exception;
 
 class googleSheetUpdateRepository implements googleSheetInterface

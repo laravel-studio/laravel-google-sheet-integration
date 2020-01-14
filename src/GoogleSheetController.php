@@ -1,15 +1,15 @@
 <?php
 
-namespace itobuz\laravelgooglesheetintegration;
+namespace laravelstudio\laravelgooglesheetintegration;
 
 use App\Http\Controllers\Controller;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-use itobuz\laravelgooglesheetintegration\contracts\googleSheetInterface;
-use itobuz\laravelgooglesheetintegration\contracts\userGoogleSheetInterface;
-use itobuz\laravelgooglesheetintegration\contracts\UserInterface;
-use itobuz\laravelgooglesheetintegration\models\googleSheetUser as SystemUser;
+use laravelstudio\laravelgooglesheetintegration\contracts\googleSheetInterface;
+use laravelstudio\laravelgooglesheetintegration\contracts\userGoogleSheetInterface;
+use laravelstudio\laravelgooglesheetintegration\contracts\UserInterface;
+use laravelstudio\laravelgooglesheetintegration\models\googleSheetUser as SystemUser;
 use App;
 
 class GoogleSheetController extends Controller
@@ -38,7 +38,7 @@ class GoogleSheetController extends Controller
         $getActionArray = explode('@', $getActionStr);
         // dd($getActionArray[0]);
 
-        if ($getActionArray[0] == 'itobuz\laravelgooglesheetintegration\GoogleSheetController') {
+        if ($getActionArray[0] == 'laravelstudio\laravelgooglesheetintegration\GoogleSheetController') {
             $request->attributes->add(['client' => $this->client]);
             $this->middleware('googleAuth')->except(['googlesheet-signin', 'authenticateUser', 'userAuthenticated', 'googleSignOut']);
         } else {

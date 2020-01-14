@@ -1,6 +1,6 @@
 <?php
 
-namespace itobuz\laravelgooglesheetintegration;
+namespace laravelstudio\laravelgooglesheetintegration;
 
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -16,11 +16,11 @@ class GoogleSheetServiceProvider extends ServiceProvider
     
     public function register()
     {
-        $this->app->bind('itobuz\laravelgooglesheetintegration\contracts\userGoogleSheetInterface', 'itobuz\laravelgooglesheetintegration\repositories\userGoogleSheetRepository');
-        $this->app->bind('itobuz\laravelgooglesheetintegration\contracts\UserInterface', 'itobuz\laravelgooglesheetintegration\repositories\UserRepository');
-        $this->app->bind('itobuz\laravelgooglesheetintegration\contracts\googleSheetInterface', 'itobuz\laravelgooglesheetintegration\repositories\googleSheetUpdateRepository');               
+        $this->app->bind('laravelstudio\laravelgooglesheetintegration\contracts\userGoogleSheetInterface', 'laravelstudio\laravelgooglesheetintegration\repositories\userGoogleSheetRepository');
+        $this->app->bind('laravelstudio\laravelgooglesheetintegration\contracts\UserInterface', 'laravelstudio\laravelgooglesheetintegration\repositories\UserRepository');
+        $this->app->bind('laravelstudio\laravelgooglesheetintegration\contracts\googleSheetInterface', 'laravelstudio\laravelgooglesheetintegration\repositories\googleSheetUpdateRepository');               
         $this->app->bind('googleSheet',function(){
-            return $this->app->make('itobuz\laravelgooglesheetintegration\GoogleSheetController');
+            return $this->app->make('laravelstudio\laravelgooglesheetintegration\GoogleSheetController');
         });      
 
 

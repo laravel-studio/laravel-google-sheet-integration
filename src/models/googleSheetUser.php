@@ -1,6 +1,6 @@
 <?php
 
-namespace itobuz\laravelgooglesheetintegration\models;
+namespace laravelstudio\laravelgooglesheetintegration\models;
 
 use App\User;
 
@@ -11,6 +11,6 @@ class googleSheetUser extends User
     
     public function userGoogleSheet()
     {
-        return $this->hasOne('itobuz\laravelgooglesheetintegration\models\userGoogleSheet','user_id','id');
+        return $this->hasOne('laravelstudio\laravelgooglesheetintegration\models\userGoogleSheet','user_id','id');
     }
 }

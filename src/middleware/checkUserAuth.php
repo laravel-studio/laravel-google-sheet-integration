@@ -1,6 +1,6 @@
 <?php
 
-namespace itobuz\laravelgooglesheetintegration\middleware;
+namespace laravelstudio\laravelgooglesheetintegration\middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Session;

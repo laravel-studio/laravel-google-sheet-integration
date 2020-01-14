@@ -1,8 +1,8 @@
 <?php
-namespace itobuz\laravelgooglesheetintegration\repositories;
+namespace laravelstudio\laravelgooglesheetintegration\repositories;
 
-use itobuz\laravelgooglesheetintegration\contracts\userGoogleSheetInterface;
-use itobuz\laravelgooglesheetintegration\models\userGoogleSheet;
+use laravelstudio\laravelgooglesheetintegration\contracts\userGoogleSheetInterface;
+use laravelstudio\laravelgooglesheetintegration\models\userGoogleSheet;
 use DB;
 use Carbon\Carbon;
 use Auth;
