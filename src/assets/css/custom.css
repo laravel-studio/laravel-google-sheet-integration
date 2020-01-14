@@ -1,0 +1,32 @@
+.content {
+    min-height: 250px;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 350px
+}
+
+.btn-dummy-signin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader{
+    font-size:25px;
+    margin-left:15px;
+}
+.content {
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+}
+.content .card {
+    border: none !important;
+}
