@@ -3,15 +3,21 @@
 1. `composer require laravel-studio/laravel-google-sheet-integration`
 
 2.  Add this code under providers array
+
 `laravelstudio\laravelgooglesheetintegration\GoogleSheetServiceProvider::class,`
-and also add this under aliases array of config > app.php
+
+Add this under aliases array of config > app.php
+
 `'GoogleSheet' => laravelstudio\laravelgooglesheetintegration\facades\googlesheet::class`
 
-3. You have to add this in $routeMiddleware in Kernal.php 
+3. You have to add this in $routeMiddleware in Kernal.php
+
 `'googleAuth' => \laravelstudio\laravelgooglesheetintegration\middleware\googleAuth::class,`
+
 `'checkUserAuth' => \laravelstudio\laravelgooglesheetintegration\middleware\checkUserAuth::class,`
 
 4. Set GOOGLE_SHEET_RETURN_URL key value in .env file like :
+
 `GOOGLE_SHEET_RETURN_URL=http://localhost:8000/<your-callback-route>`
 
 5. Run `composer dump-autoload`
@@ -30,16 +36,20 @@ Packages views will be under resources > views > vendor > googlesheet, make your
 
 **Css File:**
 
-`<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">`
+`<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">`
+
+ `<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">`
+
 `<link rel="stylesheet" href="{{ asset('/vendor/googlesheet/css/custom.css') }}">`
 
 
 **Js file:**
 
-`<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>`
+`<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>`
+
+`<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>`
+
+`<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>`
 
 After including those scripts include @stack('google-drive-scripts')
   and  @stack('auto-auth-script') at end of the script.
