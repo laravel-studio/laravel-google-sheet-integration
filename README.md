@@ -57,7 +57,8 @@ then use this code:
 `GoogleSheet::updatesettings($data);`
  
 **Here is the sample data format:**
-    ```json $data = '{
+    ```json 
+        $data = '{
                 "sheet_name":"Test Google Sheet",
                 "data": {
                     "Itobuz1": [{
@@ -84,7 +85,8 @@ then use this code:
                     "Longitude": "-9.0121648"
                 }]
                 }
-            }';```
+            }';
+      ```
 
 **Note: if u choose folder then it creates new sheet or if you choose existing file then it will be updated.**
 
