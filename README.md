@@ -57,7 +57,7 @@ then use this code:
 `GoogleSheet::updatesettings($data);`
  
 **Here is the sample data format:**
-    ``` $data = '{
+    ```json $data = '{
                 "sheet_name":"Test Google Sheet",
                 "data": {
                     "Itobuz1": [{
