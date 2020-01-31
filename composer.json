@@ -1,10 +1,12 @@
 {
     "name": "laravel-studio/laravel-google-sheet-integration",
     "description": "You can create google sheet by this packages.",
+    "keywords": ["laravel", "googlesheet"],
+    "license": "MIT",
     "authors": [
         {
-            "name": "Itobuz",
-            "email": "info@itobuz.com"
+            "name": "Laravel Studio",
+            "email": "developer@laravel-studio.io"
         }
     ],
     "require": {
